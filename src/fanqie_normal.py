@@ -96,7 +96,7 @@ def fanqie_n(url, encoding, user_agent, path_choice, data_folder, start_chapter_
     try:
         # 遍历每个章节链接
         for chapter in tqdm(chapters[start_index:]):
-            time.sleep(0.25)
+            time.sleep(0.05)
 
             result = p.get_api(chapter, headers)
 
